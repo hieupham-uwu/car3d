@@ -1,0 +1,32 @@
+/* Reset mặc định của trình duyệt */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f0f0f0; /* Màu nền web */
+  font-family: sans-serif;
+  overflow: hidden; /* Chặn thanh cuộn */
+}
+
+/* Quan trọng: model-viewer phải có chiều cao/rộng cụ thể mới hiện được */
+model-viewer {
+  width: 100vw; /* 100% chiều rộng màn hình */
+  height: 100vh; /* 100% chiều cao màn hình */
+  display: block;
+  background-color: #e0e0e0; /* Màu nền không gian 3D */
+}
+
+/* Dòng thông báo trạng thái nhỏ ở góc */
+#status-message {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 14px;
+  pointer-events: none; /* Để chuột bấm xuyên qua được */
+  z-index: 10;
+}
